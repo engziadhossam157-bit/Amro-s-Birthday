@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>عيد ميلاد عمرو</title>
+  <meta name="description" content="كل سنة وانت طيب يا عمرو، من أخوك زياد">
+  <meta name="theme-color" content="#18215C">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="كل سنة وانت طيب يا عمرو">
+  <meta property="og:description" content="اطفي الشمعة يا عمرو. من أخوك زياد">
+  <meta property="og:image" content="/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400..700&family=Reem+Kufi:wght@400..700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/sketch.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-locked">
+
+  <!-- ============ GATE: blow out the candle ============ -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="valance" aria-hidden="true"></div>
+    <div class="bunting" data-bunting aria-hidden="true"></div>
+    <div class="gate__inner">
+      <svg class="cake" id="cake" viewBox="0 0 300 330" role="button" tabindex="0" aria-label="اطفي الشمعة">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#FFD978" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#FFD978" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0" stop-color="#F06A2B"/>
+            <stop offset=".55" stop-color="#FFC24A"/>
+            <stop offset="1" stop-color="#FFF3C4"/>
+          </linearGradient>
+          <pattern id="candleStripe" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+            <rect width="10" height="10" fill="#F6EEDC"/>
+            <rect width="5" height="10" fill="#E8798F"/>
+          </pattern>
+        </defs>
+        <circle class="cake__glow" cx="150" cy="60" r="120" fill="url(#glow)"/>
+        <!-- plate -->
+        <ellipse cx="150" cy="306" rx="140" ry="18" fill="#2E9C9A"/>
+        <ellipse cx="150" cy="306" rx="128" ry="12" fill="none" stroke="#CDEBE4" stroke-width="2" stroke-dasharray="7 6"/>
+        <!-- bottom tier -->
+        <rect x="32" y="196" width="236" height="104" rx="14" fill="#B8232F"/>
+        <path d="M32 226h236" stroke="#F4B731" stroke-width="16"/>
+        <path d="M32 220 l14 14 14-14 14 14 14-14 14 14 14-14 14 14 14-14 14 14 14-14 14 14 14-14 14 14 14-14 14 14 14-14" fill="none" stroke="#18215C" stroke-width="3"/>
+        <rect x="42" y="206" width="216" height="84" rx="8" fill="none" stroke="#F6EEDC" stroke-width="2" stroke-dasharray="7 6"/>
+        <g fill="#F4B731">
+          <path d="M80 254h14v14H80zM87 249l10 12-10 12-10-12z"/>
+          <path d="M143 254h14v14h-14zM150 249l10 12-10 12-10-12z"/>
+          <path d="M206 254h14v14h-14zM213 249l10 12-10 12-10-12z"/>
+        </g>
+        <!-- top tier -->
+        <rect x="70" y="128" width="160" height="72" rx="12" fill="#18215C"/>
+        <path d="M70 140h160" stroke="#F2A7B8" stroke-width="10"/>
+        <rect x="79" y="136" width="142" height="56" rx="7" fill="none" stroke="#F4B731" stroke-width="2" stroke-dasharray="7 6"/>
+        <g fill="#2E9C9A"><circle cx="100" cy="172" r="6"/><circle cx="133" cy="172" r="6"/><circle cx="167" cy="172" r="6"/><circle cx="200" cy="172" r="6"/></g>
+        <!-- candle -->
+        <rect x="140" y="62" width="20" height="70" rx="4" fill="url(#candleStripe)"/>
+        <path d="M150 62v-12" stroke="#2A1A10" stroke-width="3" stroke-linecap="round"/>
+        <g class="flame" id="flame">
+          <path d="M150 -6c-14 20-20 32-16 44 3 9 9 12 16 12s13-3 16-12c4-12-2-24-16-44z" fill="url(#flameGrad)"/>
+          <path d="M150 20c-6 9-8 15-6 20 1 4 4 6 6 6s5-2 6-6c2-5 0-11-6-20z" fill="#FFF9E6"/>
+        </g>
+        <g class="smoke" id="smoke" fill="none" stroke="#CDD3F0" stroke-width="3" stroke-linecap="round" opacity="0">
+          <path d="M150 46c-10-12 10-20 0-32s8-20 0-32"/>
+          <path d="M156 44c-8-10 8-16 0-26" opacity=".6"/>
+        </g>
+      </svg>
+
+      <h1 class="gate__title" id="gate-title">اطفي الشمعة يا عمرو</h1>
+      <p class="gate__hint" id="gate-hint">انفخ في المايك… أو دوس على الشمعة</p>
+      <div class="gate__actions">
+        <button class="btn btn--saffron" id="mic-btn" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7"/></svg>
+          <span>انفخ في المايك</span>
+        </button>
+        <button class="btn btn--ghost" id="tap-btn" type="button">دوس وطفيها</button>
+      </div>
+      <div class="meter" aria-hidden="true"><span id="meter-fill"></span></div>
+    </div>
+  </div>
+
+  <div class="flap flap--start" aria-hidden="true"><span class="flap__trim"></span></div>
+  <div class="flap flap--end" aria-hidden="true"><span class="flap__trim"></span></div>
+
+  <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+  <!-- progress thread -->
+  <div class="thread-progress" aria-hidden="true">
+    <span class="thread-progress__fill" id="progress-fill"></span>
+    <svg class="thread-progress__needle" id="progress-needle" viewBox="0 0 24 60"><path d="M12 2c2 0 3 4 3 8v40l-3 8-3-8V10c0-4 1-8 3-8z"/><ellipse cx="12" cy="10" rx="1.6" ry="4" fill="var(--indigo-night)"/></svg>
+  </div>
+
+  <button class="sound" id="sound-btn" type="button" aria-pressed="false" aria-label="تشغيل الموسيقى">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path class="sound__speaker" d="M4 9h4l5-4v14l-5-4H4z"/><path class="sound__wave" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/><path class="sound__mute" d="M17 9l5 6M22 9l-5 6"/></svg>
+  </button>
+
+  <main id="main">
+
+    <!-- ============ HERO: the sketch banner ============ -->
+    <section class="hero tiled" id="hero" aria-labelledby="hero-title">
+      <div class="valance" aria-hidden="true"></div>
+      <div class="bunting" data-bunting aria-hidden="true"></div>
+
+      <h2 class="hero__title" id="hero-title">
+        <span class="hero__line" data-words>كل سنة وانت طيب</span>
+        <span class="hero__name" data-words>يا عمرو</span>
+      </h2>
+
+      <figure class="banner">
+        <div class="banner__cloth">
+          <svg class="sketch" id="sketch" viewBox="0 0 1280 720" role="img" aria-label="رسمة بالرصاص لعمرو وهو بيعمل قهوة ومبتسم">
+            <defs><mask id="scribble-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="720"><g id="scribbles" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></g><rect id="scribble-cover" width="1280" height="720" fill="#fff" opacity="1"/></mask></defs>
+            <image class="sketch__ghost" href="assets/sketch.webp" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+            <image href="assets/sketch.webp" width="1280" height="720" preserveAspectRatio="xMidYMid slice" mask="url(#scribble-mask)"/>
+            <g class="pencil" id="pencil" opacity="0">
+              <g transform="rotate(-35)">
+                <rect x="-10" y="-150" width="20" height="120" fill="#F4B731"/>
+                <rect x="-10" y="-150" width="20" height="16" fill="#E8798F"/>
+                <rect x="-10" y="-134" width="20" height="6" fill="#CDD3F0"/>
+                <path d="M-10 -30 L10 -30 L0 0 Z" fill="#E9C9A0"/>
+                <path d="M-3.4 -10 L3.4 -10 L0 0 Z" fill="#222"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </figure>
+
+      <div class="hero__voice">
+        <p class="ruqaa hero__opener" data-words>اخوي عمرو كل سنه وانت طيب ياحبيبي والله وحشني ياخي والله</p>
+        <p class="hero__lede">كل سنة وانت طيب يا حبيبي يا أخويا وسندي وصاحبي وأغلى الناس على قلبي ❤️🫂❤️</p>
+      </div>
+
+      <a class="scroll-cue" href="#more" aria-label="كمّل للجواب">
+        <span>كمّل</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ QUILT 1 ============ -->
+    <section class="quilt tiled tiled--indigo" id="more" aria-labelledby="q1-title">
+      <h2 class="section-title" id="q1-title" data-words>أكتر من مجرد صاحب</h2>
+      <div class="quilt__panels">
+        <article class="panel panel--turq" data-panel>
+          <p>مش عارف أبدأ كلامي معاك منين ولا أقولك إيه يوفيك حقك، بس كل اللي أعرفه إني مهما اتكلمت ومهما كتبت مش هقدر أوصفلك مكانتك عندي ولا قد إيه أنا ممتن إن ربنا رزقني بواحد زيك في حياتي. ❤️</p>
+        </article>
+        <article class="panel panel--rose" data-panel>
+          <p>النهارده مش مجرد عيد ميلادك، ده يوم مميز بالنسبالي أنا كمان، عشان في اليوم ده اتولد شخص بقى مع الوقت أكتر من مجرد صاحب، بقى <mark class="thread">أخ ليا، وضهر وسند</mark>، وواحد من الناس اللي وجودهم في حياتي نعمة كبيرة بحمد ربنا عليها دايمًا. يمكن إحنا مش إخوات بالدم، بس والله <mark class="thread">أنت أخويا بكل ما تحمله الكلمة من معنى</mark>، ويمكن في حاجات كتير مش بعرف أقولها أو أعبر عنها، بس ده عمره ما هيغير من غلاوتك عندي ولا من مكانتك اللي محدش يقدر ياخدها. 🫶🏻❤️</p>
+        </article>
+        <article class="panel panel--saffron" data-panel>
+          <p>عايز أشكرك من قلبي على صداقتنا، على كل موقف حلو بينا، على كل ضحكة ضحكناها سوا، وعلى كل لحظة كنت فيها موجود في حياتي. <mark class="thread">شكرًا إنك شخص أقدر أعتبره أخويا بجد</mark>، وشكرًا على كل مرة حسستني فيها إن لسه في ناس بجد، ناس وجودها لوحده بيهون حاجات كتير، وناس مهما الدنيا اتغيرت بيبقى ليها مكان ثابت في القلب. شكرًا على كل حاجة عملتها عشاني، حتى الحاجات اللي يمكن أنت نسيتها أو ماخدتش بالك إنها فرقت معايا، أنا مقدرها ومش بنساها. ❤️‍🩹</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ DISTANCE: Egypt to Saudi ============ -->
+    <section class="distance" id="distance" aria-labelledby="dist-title">
+      <div class="distance__stage">
+        <h2 class="section-title section-title--light" id="dist-title" data-words>البُعد عمره ما هيقلل من غلاوتك</h2>
+        <svg class="map" viewBox="0 0 600 420" role="img" aria-label="خيط متخيط من مصر للسعودية، زياد في مصر وعمرو في السعودية">
+          <defs>
+            <mask id="thread-draw" maskUnits="userSpaceOnUse"><path id="thread-mask-path" d="M175 112 C 250 -10, 400 10, 468 206" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/></mask>
+          </defs>
+          <!-- Egypt patch -->
+          <path class="map__land" d="M38 74 L206 64 Q224 70 236 84 L258 96 L262 128 L240 164 L292 300 L298 340 L38 340 Z" fill="#F4B731"/>
+          <path d="M50 84 L200 76 L250 104 L232 164 L282 304 L286 328 L50 328 Z" fill="none" stroke="#18215C" stroke-width="2" stroke-dasharray="7 6" opacity=".55"/>
+          <path d="M150 340 C 160 280, 140 220, 168 150 C 175 128, 172 116, 175 106" fill="none" stroke="#2E9C9A" stroke-width="7" stroke-linecap="round"/>
+          <!-- Saudi patch -->
+          <path class="map__land" d="M300 92 L420 58 L568 124 L584 300 L478 384 L386 404 L340 300 L284 166 Z" fill="#2F7D4F"/>
+          <path d="M310 104 L420 72 L554 132 L570 294 L472 372 L394 390 L350 296 L298 170 Z" fill="none" stroke="#F6EEDC" stroke-width="2" stroke-dasharray="7 6" opacity=".6"/>
+          <!-- Red Sea -->
+          <path d="M248 112 L280 150 L344 296 L384 404 L344 414 L294 322 L232 172 Z" fill="#CDEBE4"/>
+          <path d="M276 204 l10 6 10-6 10 6" fill="none" stroke="#2E9C9A" stroke-width="3" stroke-linecap="round"/>
+          <path d="M306 286 l10 6 10-6 10 6" fill="none" stroke="#2E9C9A" stroke-width="3" stroke-linecap="round"/>
+          <text class="map__label" x="110" y="270">مصر</text>
+          <text class="map__label map__label--light" x="470" y="300">السعودية</text>
+          <!-- the stitched thread -->
+          <path d="M175 112 C 250 -10, 400 10, 468 206" fill="none" stroke="#B8232F" stroke-width="5" stroke-dasharray="12 9" stroke-linecap="round" mask="url(#thread-draw)"/>
+          <g class="map__needle" id="needle"><path d="M0 -26c2 0 3 4 3 8v30l-3 6-3-6v-30c0-4 1-8 3-8z" fill="#F6EEDC" stroke="#18215C" stroke-width="1.4"/><ellipse cx="0" cy="-18" rx="1.2" ry="3.4" fill="#18215C"/></g>
+          <!-- pins -->
+          <g class="pin pin--ziad" transform="translate(175 112)"><path d="M0 10 C -18 -4 -12 -20 0 -12 C 12 -20 18 -4 0 10 Z" fill="#B8232F" stroke="#F6EEDC" stroke-width="2"/></g>
+          <g class="pin pin--amro" transform="translate(468 206)"><path d="M0 10 C -18 -4 -12 -20 0 -12 C 12 -20 18 -4 0 10 Z" fill="#B8232F" stroke="#F6EEDC" stroke-width="2"/></g>
+          <text class="map__tag" x="175" y="146">زياد هنا</text>
+          <text class="map__tag map__tag--light" x="468" y="240">عمرو هناك</text>
+        </svg>
+      </div>
+      <article class="panel panel--wide panel--cotton" data-panel>
+        <p>وأكتر حاجة مضايقاني إنك بعيد عني دلوقتي، وإن عيد ميلادك بييجي وإنت في السعودية وأنا هنا، وإن مش قادر أكون جنبك وأحتفل بيك ونقضي اليوم سوا زي ما نفسي. والله لو المسافات بإيدي كنت جيتلك واحتفلت بيك بنفسي، لأنك تستاهل كل حاجة حلوة في الدنيا. بس عايزك تعرف إن <mark class="thread">البُعد عمره ما هيقلل من غلاوتك</mark>، وإن المسافة مهما طالت مش هتغير حاجة في علاقتنا، لأن في ناس بتبقى قريبة من القلب حتى لو بينها وبينك بلاد، وإنت من الناس دي يا أخويا. ❤️🇸🇦🇪🇬</p>
+      </article>
+    </section>
+
+    <!-- ============ GALLERY: photos on the tent rope ============ -->
+    <section class="gallery tiled tiled--madder" id="gallery" aria-labelledby="gal-title">
+      <div class="gallery__pin">
+        <h2 class="section-title section-title--light" id="gal-title" data-words>كل ضحكة ضحكناها سوا</h2>
+        <div class="gallery__track" id="gallery-track">
+          <div class="rope" aria-hidden="true"></div>
+          <figure class="photo" style="--tilt:-4deg;--patch:var(--saffron)">
+            <button class="photo__btn" type="button" data-full="assets/photo-1.webp" aria-label="كبّر الصورة">
+              <span class="peg" aria-hidden="true"></span>
+              <img src="assets/photo-1.webp" alt="عمرو وصاحبه واقفين قدام باب خشب منقوش" width="788" height="1400" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="ruqaa">أخويا بكل ما تحمله الكلمة من معنى</figcaption>
+          </figure>
+          <figure class="photo" style="--tilt:3deg;--patch:var(--turq)">
+            <button class="photo__btn" type="button" data-full="assets/photo-2.webp" aria-label="كبّر الصورة">
+              <span class="peg" aria-hidden="true"></span>
+              <img src="assets/photo-2.webp" alt="عمرو وصاحبه بالليل في الشارع، عمرو رافع صباعه" width="788" height="1400" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="ruqaa">ضهر وسند</figcaption>
+          </figure>
+          <figure class="photo" style="--tilt:-2deg;--patch:var(--rose)">
+            <button class="photo__btn" type="button" data-full="assets/photo-3.webp" aria-label="كبّر الصورة">
+              <span class="peg" aria-hidden="true"></span>
+              <img src="assets/photo-3.webp" alt="سيلفي لعمرو رافع صباعه ومعاه طفل صغير بيضحك" width="788" height="1400" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="ruqaa">ضحكتك منورة وشك دايمًا</figcaption>
+          </figure>
+          <figure class="photo" style="--tilt:4deg;--patch:var(--leaf)">
+            <button class="photo__btn" type="button" data-full="assets/photo-4.webp" aria-label="كبّر الصورة">
+              <span class="peg" aria-hidden="true"></span>
+              <img src="assets/photo-4.webp" alt="سيلفي لعمرو وصاحبه قاعدين على الأكل" width="767" height="1070" loading="lazy" decoding="async">
+            </button>
+            <figcaption class="ruqaa">على كل ضحكة ضحكناها سوا</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUILT 2 ============ -->
+    <section class="quilt tiled tiled--indigo" aria-labelledby="q2-title">
+      <h2 class="section-title" id="q2-title" data-words>نفضل دايمًا زي ما إحنا</h2>
+      <div class="quilt__panels">
+        <article class="panel panel--turq" data-panel>
+          <p>عارف إن الحياة بتاخدنا، وكل واحد بيبقى عنده مسؤولياته وظروفه وطموحاته، وممكن الأيام تشغلنا أو المسافات تبعدنا، بس أنا بجد بتمنى إن مهما حصل ومهما الدنيا أخدت كل واحد فينا في طريق، <mark class="thread">نفضل دايمًا زي ما إحنا، أصحاب وإخوات وسند لبعض</mark>. نفضل نرجع لبعض مهما غبنا، ونفضل نضحك على نفس الحاجات، ونفتكر أيامنا ومواقفنا، ونعيش أيام أحلى كتير لسه مستنيانا. لأن صداقتنا بالنسبالي مش مجرد فترة في حياتي وعدت، دي حاجة غالية عايزها تفضل معايا طول العمر. 🫂❤️</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ DUAA ============ -->
+    <section class="duaa" id="duaa" aria-labelledby="duaa-title">
+      <div class="duaa__stars" id="duaa-stars" aria-hidden="true"></div>
+      <h2 class="section-title section-title--saffron" id="duaa-title" data-words>بدعيلك من كل قلبي</h2>
+      <div class="duaa__text">
+        <p data-lines>في عيد ميلادك، بدعيلك من كل قلبي إن ربنا يرزقك راحة البال اللي تستاهلها، والفرحة اللي تنسيك أي زعل عديت بيه، والنجاح اللي يفرح قلبك ويخليك فخور بنفسك وبكل خطوة بتاخدها. ربنا يفتحلك كل أبواب الخير، ويوفقك في شغلك وحياتك، ويحققلك كل حلم نفسك فيه، حتى الأحلام اللي لسه ماحكتهاش لحد. ربنا يعوضك عن أي تعب شوفته، ويجبر بخاطرك في كل حاجة نفسك فيها، ويرزقك من حيث لا تحتسب، ويبعد عنك أي وجع أو خذلان، ويحفظك من كل شر، ويخلي ضحكتك منورة وشك دايمًا. يا رب أشوفك في أحسن مكانة، وتحقق كل اللي بتسعى عشانه، وتفضل دايمًا ناجح ومبسوط ومطمن. 🤲🏻❤️</p>
+      </div>
+    </section>
+
+    <!-- ============ QUILT 3 ============ -->
+    <section class="quilt tiled tiled--indigo" aria-labelledby="q3-title">
+      <h2 class="section-title" id="q3-title" data-words>ليك أخ هنا</h2>
+      <div class="quilt__panels">
+        <article class="panel panel--saffron" data-panel>
+          <p>ونفسي السنة الجديدة من عمرك تكون مختلفة عن كل اللي فات، سنة كلها خير ونجاحات وذكريات حلوة، سنة ربنا يعوضك فيها عن كل لحظة صعبة، ويكرمك فيها أكتر مما تتمنى. وأتمنى إننا نفضل نحتفل بأعياد ميلاد بعض سنين طويلة، ونفضل موجودين في حياة بعض مهما كبرنا ومهما اتغيرت ظروفنا، ونبص في يوم على كل اللي عدينا بيه ونضحك ونقول <mark class="thread">الحمد لله إننا فضلنا مع بعض</mark>. ❤️</p>
+        </article>
+        <article class="panel panel--rose" data-panel>
+          <p>وخليني أقولك حاجة، يمكن مش بقولك الكلام ده كل يوم، ويمكن ساعات بقصر في التعبير عن اللي جوايا، بس أنت غالي عندي جدًا، وأكتر بكتير من اللي الكلام يقدر يوصله. وجودك في حياتي فرق معايا، وصداقتك من الحاجات اللي أنا بعتز بيها بجد، ومهما قابلت ناس في حياتي، هيفضل ليك مكانك الخاص اللي محدش يقدر ياخده. وأنا بجد فخور إني أعرفك، وفخور إن عندي صاحب زيك <mark class="thread">أقدر أقول عليه أخويا من غير ما أفكر مرتين</mark>.</p>
+        </article>
+        <article class="panel panel--turq" data-panel>
+          <p>ولو في يوم احتجتني، في فرحك قبل زعلك، وفي نجاحك قبل تعبك، وفي أي وقت الدنيا تضيق عليك فيه، <mark class="thread">افتكر إن ليك أخ هنا مهما بعدت بينا المسافات</mark>، هيفضل يتمنالك الخير من قلبه، ويفرح لفرحتك كأنها فرحته، ويتمنى يشوفك دايمًا في أحسن حال. مش لازم نكون جنب بعض كل يوم عشان نثبت لبعض إننا غاليين، لأن في علاقات قيمتها أكبر من الكلام وأقوى من المسافات. ❤️🫂</p>
+        </article>
+        <article class="panel panel--cotton" data-panel>
+          <p>كل سنة وإنت أخويا وحبيبي وصاحبي الجدع، كل سنة وإنت طيب وناجح ومبسوط ومرتاح البال، كل سنة وإنت محقق حاجة جديدة بتفرحك، وكل سنة وإنت محاط بناس بتحبك بجد وتقدرك زي ما تستاهل. ربنا يخليك ليا يا أخويا، ويحفظك من كل سوء، وما يحرمنيش منك ولا من وجودك في حياتي، ويجمعنا دايمًا على خير، ويكتبلك كل اللي نفسك فيه وأكتر.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ BIG WORDS (scroll-lit) ============ -->
+    <section class="love" id="love" aria-label="بحبك يا أخويا">
+      <div class="love__pin">
+        <p class="love__text" id="love-text">بحبك يا أخويا والله، وبشكر ربنا إنه رزقني بصاحب زيك، وإن الأيام جمعتني بإنسان غالي عليا بالشكل ده. ❤️❤️</p>
+      </div>
+    </section>
+
+    <!-- ============ FINALE ============ -->
+    <section class="finale tiled tiled--night" id="finale" aria-labelledby="fin-title">
+      <article class="panel panel--wide panel--cotton" data-panel>
+        <p>عيد ميلاد سعيد يا أغلى الغاليين، وعقبال مليون سنة وإنت وسط كل الناس اللي بتحبك، ودايمًا ناجح ومبسوط ورافع راسك. وإن شاء الله <mark class="thread">السنة الجاية نكون بنحتفل سوا</mark>، وأعوضك عن كل عيد ميلاد عدى وإنت بعيد عني. لحد ما نتقابل، خليك فاكر إن ليك أخ هنا بيحبك من قلبه، وبيتمنالك الدنيا كلها حلوة زي قلبك يا حبيبي. 🎂❤️🫂</p>
+      </article>
+
+      <div class="pennant" data-panel>
+        <h2 class="pennant__text" id="fin-title">كل سنة وإنت أخويا اللي مخلفتوش أمي، وصاحبي اللي الأيام مش هتعوضني عنه، وواحد من أجمل النعم اللي ربنا رزقني بيها. بحبك يا صاحبي، وربنا يديمك في حياتي العمر كله يا رب. ❤️🫶🏻</h2>
+      </div>
+
+      <svg class="signature" id="signature" viewBox="0 0 600 200" role="img" aria-label="أخوك زياد">
+        <text x="300" y="140" text-anchor="middle">أخوك زياد</text>
+      </svg>
+
+      <div class="encore">
+        <button class="btn btn--saffron" id="encore-btn" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3 4-4 6-3.4 8 .5 1.6 1.8 2.5 3.4 2.5s2.9-.9 3.4-2.5C16 9 15 7 12 3z"/><path d="M7 21h10M9 21v-5h6v5"/></svg>
+          <span>نولّع الشمعة تاني؟</span>
+        </button>
+      </div>
+
+      <footer class="footer">
+        <div class="valance valance--up" aria-hidden="true"></div>
+        <p class="ruqaa">من مصر للسعودية، بكل الحب</p>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="الصورة">
+    <img id="lightbox-img" src="assets/photo-1.webp" alt="">
+    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="اقفل">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="music.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

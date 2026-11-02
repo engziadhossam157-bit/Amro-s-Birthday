@@ -1,0 +1,13 @@
+{
+  "world": "khayamiya-tent",
+  "seed": "ae7aff3c",
+  "colors": {
+    "madder": "#B8232F", "madder-deep": "#7E1420", "indigo": "#18215C", "indigo-night": "#0D1238",
+    "saffron": "#F4B731", "turq": "#2E9C9A", "turq-deep": "#0F5A5C", "rose": "#E8798F", "leaf": "#2F7D4F",
+    "cotton": "#F6EEDC", "ink": "#16163A",
+    "cloth-turq": "#CDEBE4", "cloth-rose": "#F8D3DB", "cloth-saffron": "#FBE1A0", "cloth-cotton": "#F6EEDC"
+  },
+  "fonts": { "display": "Reem Kufi", "script": "Aref Ruqaa", "body": "Noto Naskh Arabic", "emoji": "Noto Color Emoji" },
+  "motion": { "cloth": "cubic-bezier(.2,.9,.25,1.15)", "reveal": "expo.out" },
+  "radius": { "panel": "10px", "button": "999px" }
+}
